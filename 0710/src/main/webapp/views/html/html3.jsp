@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<div class="col-sm-10 mx-auto">
+<div class="col-sm-9 mx-auto">
   <h2 class="mb-4 text-center">📸 HTML3 Center Page - Carousel Showcase</h2>
 
   <div id="demo" class="carousel slide" data-ride="carousel" style="max-width: 1000px; margin: auto;">

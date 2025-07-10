@@ -3,8 +3,15 @@
     <h2>About Us</h2>
     <form action="/registertestimpl" method="post">
         <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" class="form-control" id="name" name="name">
+            <label>Name:</label>
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="First Name" name="firstName">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Last Name" name="lastName">
+                </div>
+            </div>
         </div>
         <div class="form-group">
             <label for="email">Email:</label>
@@ -57,6 +64,15 @@
                 <option>China</option>
             </select>
         </div>
+        <hr>
+        <!-- Age -->
+        <h5>Age: <span id="age-value">0</span></h5>
+        <input type="range" class="form-control-range" name="range" min="0" max="100" value="0" oninput="document.getElementById('age-value').innerText = this.value">
+        <hr>
         <button type="submit" class="btn btn-primary">Submit</button>
+        <!-- Calendar -->
+        <hr>
+        <h5>Birthday: <span id="birthday-value"></span></h5>
+        <input type="date" class="form-control" name="birthday" value="0" oninput="document.getElementById('birthday-value').innerText = this.value">
     </form>
 </div>
