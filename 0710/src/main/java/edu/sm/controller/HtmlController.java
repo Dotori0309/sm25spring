@@ -34,4 +34,16 @@ public class HtmlController {
         model.addAttribute("center",dir+"html3");
         return "index";
     }
+    @RequestMapping("/html4")
+    public String html4(Model model) {
+        model.addAttribute("left",dir+"left");
+        model.addAttribute("center",dir+"html4");
+        return "index";
+    }
+    @RequestMapping("/html5")
+    public String html5(Model model) {
+        model.addAttribute("left",dir+"left");
+        model.addAttribute("center",dir+"html5");
+        return "index";
+    }
 }

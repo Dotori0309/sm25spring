@@ -3,7 +3,7 @@
 
 <%-- Center Page --%>
 <div class="col-sm-9">
-    <h2>HTML Center Page</h2>
-    <h5>Title description, Sep 2, 2017</h5>
+    <h2>Main HTML Center Page</h2>
+    <h5>여기서 모든 콘텐츠가 시작됩니다. 지금 바로 탐색해보세요!</h5>
 
 </div>
