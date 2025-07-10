@@ -29,21 +29,22 @@
             사용자 로그인 양식
         </div>
         <div class="card-body">
-            <form action="/action_page.php">
-                <div class="form-group">
-                    <label for="email">이메일 주소</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
-                </div>
-                <div class="form-group">
-                    <label for="pwd">비밀번호</label>
-                    <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-                </div>
-                <div class="form-check mb-3">
-                    <input class="form-check-input" type="checkbox" id="remember">
-                    <label class="form-check-label" for="remember">자동 로그인</label>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">로그인</button>
-            </form>
+            <form action="/loginimpl" method="post" style="margin-top: 10px;">
+        <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" id="email" name="id">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" name="password">
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> Remember me
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
         </div>
     </div>
 </div>

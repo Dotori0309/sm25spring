@@ -15,11 +15,6 @@ public class MainController {
         return "index";
     }
 
-    @RequestMapping("/about")
-    public String about(Model model) {
-        model.addAttribute("left","aboutleft");
-        model.addAttribute("center","about");
-        return "index";
-    }
+    
 
 }
