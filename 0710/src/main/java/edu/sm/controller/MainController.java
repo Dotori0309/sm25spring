@@ -1,8 +1,8 @@
 package edu.sm.controller;
 
-import org.springframework.ui.Model;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -12,8 +12,14 @@ public class MainController {
     // https://127.0.0.1/
     @RequestMapping("/")
     public String main(Model model) {
-        log.info("start main");
-        log.info("start main");
-        return "main";
+        return "index";
     }
+
+    @RequestMapping("/about")
+    public String about(Model model) {
+        model.addAttribute("left","aboutleft");
+        model.addAttribute("center","about");
+        return "index";
+    }
+
 }

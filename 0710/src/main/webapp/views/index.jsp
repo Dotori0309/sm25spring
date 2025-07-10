@@ -1,7 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <title>Bootstrap 4 Website Example</title>
   <meta charset="utf-8">
@@ -12,35 +13,29 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <style>
     .fakeimg {
-      height: 200px;
+      height: 150px;
       background: #aaa;
     }
   </style>
 </head>
 <body>
-
 <ul class="nav justify-content-end">
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="/login">Login</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="/register">Register</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#">Disabled</a>
+    <a class="nav-link" href="/about">About Us</a>
   </li>
 </ul>
-
-<%-- Head Start --%>
+<%-- Header Start --%>
 <div class="jumbotron text-center" style="margin-bottom:0">
-  <h1>My First Bootstrap 4 Page</h1>
-  <p>Resize this responsive page to see the effect!</p>
+  <h1>HTML5 & JavaScript</h1>
+  <p>HTML5, CSS, JavaScript, jQuery, AJAX</p>
 </div>
-<%-- Head End --%>
-
+<%-- Header End --%>
 
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -60,15 +55,15 @@
         <a class="nav-link" href="#">JS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">JQuery </a>
+        <a class="nav-link" href="#">JQuery</a>
       </li>
     </ul>
   </div>
 </nav>
 
-<div class="container" style="margin-top:30px"; margin-bottom: 30px;>
+<div class="container" style="margin-top:30px; margin-bottom: 30px;">
   <div class="row">
-    <%--Left Menu Start--%>
+    <%-- Left Menu Start ........  --%>
     <c:choose>
       <c:when test="${left == null}">
         <jsp:include page="left.jsp"/>
@@ -77,23 +72,23 @@
         <jsp:include page="${left}.jsp"/>
       </c:otherwise>
     </c:choose>
-    <%--Left Menu End--%>
 
-  <%--Center Start--%>
-      <c:choose>
-        <c:when test="${center == null}">
-          <jsp:include page="center.jsp"/>
-        </c:when>
-        <c:otherwise>
-          <jsp:include page="${center}.jsp"/>
-        </c:otherwise>
-      </c:choose>
-  <%--Center End--%>
+    <%-- Left Menu End ........  --%>
+    <c:choose>
+      <c:when test="${center == null}">
+        <jsp:include page="center.jsp"/>
+      </c:when>
+      <c:otherwise>
+        <jsp:include page="${center}.jsp"/>
+      </c:otherwise>
+    </c:choose>
+    <%-- Center Start ........  --%>
 
+    <%-- Center End ........  --%>
   </div>
 </div>
 
-<div class="jumbotron text-center" style="background-color:black; color:white; margin-bottom:0px; margin-top: 200px">
+<div class="text-center" style="background-color:black; color: white; margin-bottom:0; max-height: 50px;">
   <p>Footer</p>
 </div>
 
