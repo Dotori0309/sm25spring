@@ -5,33 +5,33 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/html")
-public class HtmlController {
+@RequestMapping("/js")
+public class JsController {
 
-    String dir = "html/";
+    String dir = "js/";
 
     @RequestMapping("")
-    public String html(Model model) {
+    public String login(Model model) {
         model.addAttribute("left",dir+"left");
         model.addAttribute("center",dir+"center");
         return "index";
     }
-    @RequestMapping("/html1")
-    public String html1(Model model) {
+    @RequestMapping("/js1")
+    public String js1(Model model) {
         model.addAttribute("left",dir+"left");
-        model.addAttribute("center",dir+"html1");
+        model.addAttribute("center",dir+"js1");
         return "index";
     }
-    @RequestMapping("/html2")
-    public String html2(Model model) {
+    @RequestMapping("/js2")
+    public String js2(Model model) {
         model.addAttribute("left",dir+"left");
-        model.addAttribute("center",dir+"html2");
+        model.addAttribute("center",dir+"js2");
         return "index";
     }
-    @RequestMapping("/html3")
-    public String html3(Model model) {
+    @RequestMapping("/js3")
+    public String js3(Model model) {
         model.addAttribute("left",dir+"left");
-        model.addAttribute("center",dir+"html3");
+        model.addAttribute("center",dir+"js3");
         return "index";
     }
 }

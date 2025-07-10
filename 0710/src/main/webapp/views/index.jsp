@@ -46,16 +46,16 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">HTML</a>
+        <a class="nav-link" href="/html">HTML</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">CSS</a>
+        <a class="nav-link" href="/css">CSS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">JS</a>
+        <a class="nav-link" href="/js">JS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">JQuery</a>
+        <a class="nav-link" href="jq">JQuery</a>
       </li>
     </ul>
   </div>
