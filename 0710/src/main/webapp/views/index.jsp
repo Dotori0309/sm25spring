@@ -55,7 +55,7 @@
         <a class="nav-link" href="/js">JS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="jq">JQuery</a>
+        <a class="nav-link" href="/jq">JQuery</a>
       </li>
     </ul>
   </div>

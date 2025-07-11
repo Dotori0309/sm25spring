@@ -4,13 +4,13 @@
     <p>JavaScript Left Menu</p>
     <ul class="nav nav-pills flex-column">
         <li class="nav-item">
-            <a class="nav-link" href="/js/js1">jQuery1</a>
+            <a class="nav-link" href="/js/js1">JS1</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/js/js2">jQuery2</a>
+            <a class="nav-link" href="/js/js2">JS2</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/js/js3">jQuery3</a>
+            <a class="nav-link" href="/js/js3">JS3</a>
         </li>
     </ul>
     <hr class="d-sm-none">
