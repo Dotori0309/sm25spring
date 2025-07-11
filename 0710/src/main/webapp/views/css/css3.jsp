@@ -15,8 +15,14 @@
     let arr = [1, 2, 3, 4, 5];
     let obj = {id: 1, name: "Hello"};
 
+    let f1 = function () {}
 
-    alert(typeof (obj));
+    let u;
+
+    //JSON (JavaScript Object Notation)
+    let json = [{}, {}, {}];
+
+    alert(typeof (u));
 
   }
   console.log("CSS3 2");
