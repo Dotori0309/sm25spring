@@ -108,14 +108,12 @@
         <a class="nav-link" href="/ajax">AJAX</a>
       </li>
 
-      <c:if test="${sessionScope.logincust != null}">
-        <li class="nav-item">
-          <a class="nav-link" href="/cust">Cust</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/product">Product</a>
-        </li>
-      </c:if>
+      <li class="nav-item">
+        <a class="nav-link" href="/cust">Cust</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/product">Product</a>
+      </li>
 
     </ul>
   </div>
