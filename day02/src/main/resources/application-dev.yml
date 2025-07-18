@@ -11,9 +11,9 @@ spring:
       suffix: .jsp
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/shopdb?characterEncoding=utf8
-    username: smuser
-    password: 1q2w3e@@
+    url: jdbc:mysql://127.0.0.1:3306/kakadb?characterEncoding=utf8
+    username: kakaouser
+    password: 111111
 
 mybatis:
   type-aliases-package: edu.sm.dto

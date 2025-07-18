@@ -6,11 +6,11 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 @Slf4j
-class Day01ApplicationTests {
+class Day02ApplicationTests {
 
     @Test
     void contextLoads() {
-        log.info("hello");
+        log.info("Start Test ...");
     }
 
 }
