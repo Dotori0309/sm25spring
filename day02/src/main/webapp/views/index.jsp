@@ -107,13 +107,17 @@
       <li class="nav-item">
         <a class="nav-link" href="/ajax">AJAX</a>
       </li>
-
+      <li class="nav-item">
+        <a class="nav-link" href="/productitem">ProductItem</a>
+      </li>
+      <c:if test="${sessionScope.logincust.custId == 'admin'}">
         <li class="nav-item">
           <a class="nav-link" href="/cust">Cust</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/product">Product</a>
         </li>
+      </c:if>
 
     </ul>
   </div>
