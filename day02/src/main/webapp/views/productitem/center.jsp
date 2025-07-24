@@ -14,16 +14,16 @@
 
       <div class="card-columns">
         <c:forEach var="p" items="${plist}">
-          <div class="card bg-light">
-            <img  class="card-img-top" height="400px" src="/imgs/${p.productImg}" alt="Card image">
-            <div class="card-body">
-              <h3 class="card-title">${p.cateName}</h3>
-              <h5 class="card-title">${p.productName}</h5>
-              <p class="card-text">
-                <fmt:formatNumber type="number" pattern="###,###원" value="${p.productPrice}" /></p>
-              <a href="/productitem/see?id=${p.productId}" class="btn btn-primary">See</a>
-            </div>
+        <div class="card bg-light">
+          <img  class="card-img-top" height="400px" src="/imgs/${p.productImg}" alt="Card image">
+          <div class="card-body">
+            <h3 class="card-title">${p.cateName}</h3>
+            <h5 class="card-title">${p.productName}</h5>
+            <p class="card-text">
+              <fmt:formatNumber type="number" pattern="###,###원" value="${p.productPrice}" /></p>
+            <a href="/productitem/see?id=${p.productId}" class="btn btn-primary">See</a>
           </div>
+        </div>
         </c:forEach>
       </div>
 
